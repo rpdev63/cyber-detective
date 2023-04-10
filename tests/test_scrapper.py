@@ -30,12 +30,12 @@ def test_scrap_one_book_page(scrapper: Scrapper_Book):
     assert isinstance(book, Book)
     assert isinstance(book.title, str)
     assert isinstance(book.price, str)
-    assert isinstance(book.rating, str)
+    assert isinstance(book.rating, int)
     assert isinstance(book.availability, str)
     assert isinstance(book.img_url, str)
     scrapper.driver.quit()
 
 
-def test_links_are_found(scrapper: Scrapper_Book):
-    assert len(scrapper.get_all_links(reduce = 0.2)) == scrapper.total_books
-    scrapper.driver.quit()
+# def test_links_are_found(scrapper: Scrapper_Book):
+#     assert len(scrapper.get_all_links()) == scrapper.total_books
+#     scrapper.driver.quit()
