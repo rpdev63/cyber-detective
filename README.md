@@ -16,13 +16,13 @@ pip install -r requirements.txt
 ```
   
 
-2 ) Remplir le fichier .env à la racine du projet, renseigner votre nom d'utilisateur et mot de passe mariaDb
+2 ) Remplir le fichier .env à la racine du projet, renseigner votre nom d'utilisateur et mot de passe mariaDb, ainsi que le numéro de port ( par défaut : 3306 ou 3307 si vous avez WAMP et PhpMyAdmin )
 ⚠️ *PhpMyAdmin doit être installé et opérationnel pour cette étape, si vous ne l'avez pas déjà fait télécharger WAMP [ici](https://www.wampserver.com/)*
 
 
 3 ) Démarrer l'application / le scrapper
 ```
-python -m run.py
+python -run.py
 ```
 Une base de donnée mariaDB est créée et un fichier csv contenant les données est disponible dans le dossier data/
 
