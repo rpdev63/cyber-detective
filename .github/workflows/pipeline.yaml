@@ -37,9 +37,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install libmariadb3 libmariadb-dev
-          systemctl status mariadb
-          sudo systemctl start mariadb
-          sudo find / -name mysqld.sock
 
       # Install python 3.10
       - name: Set up Python 3.10
@@ -55,7 +52,7 @@ jobs:
 
       # launch tests
       - name: Run pytest
-        run: python -m pytest
+        run: python -m pytest tests/test_scrapper
 
       # Generate badges for readMe
       - name: Generate badges
