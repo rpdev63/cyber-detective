@@ -2,7 +2,7 @@
 
 ## PARTIE 1 - WEB SCRAPPING 
 
-Un scrapper récupère les infos sur les livres du site https://books.toscrape.com/
+Un scrapper récupère les infos sur les livres du site https://books.toscrape.com/ , insère les données dans une BDD MariaDB, et créé un fichier books.csv
 
 #### Procédure pour démarrer le scrapper
 
@@ -24,7 +24,6 @@ pip install -r requirements.txt
 ```
 python -run.py
 ```
-Une base de donnée mariaDB est créée et un fichier csv contenant les données est disponible dans le dossier data/
 
 ## PARTIE 2 - ANALYSE DE TWEETS
 
