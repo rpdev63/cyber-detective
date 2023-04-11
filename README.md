@@ -24,6 +24,7 @@ pip install -r requirements.txt
 ```
 python -m run.py
 ```
+Une base de donnée mariaDB est créée et un fichier csv contenant les données est disponible dans le dossier data/
 
 ## PARTIE 2 - ANALYSE DE TWEETS
 
