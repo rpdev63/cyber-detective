@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 3 ) Démarrer l'application / le scrapper
 ```
-python -run.py
+python run.py
 ```
 
 ## PARTIE 2 - ANALYSE DE TWEETS
